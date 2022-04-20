@@ -1,0 +1,7 @@
+version: "2"
+services:
+  backend:
+    build: .
+    command: npm start
+    ports:
+      - 9000:8000
