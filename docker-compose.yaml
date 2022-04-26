@@ -3,7 +3,7 @@ services:
   backend:
     build: .
     command: npm start
+    volumes:
+      - .:/usr/app
     ports:
       - ${PORT}:8000
-
-#increment to force update.
