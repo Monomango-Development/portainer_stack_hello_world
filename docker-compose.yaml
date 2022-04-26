@@ -2,10 +2,9 @@ version: "2"
 services:
   node:
     image: "node:lts"
-    user: "node"
-    working_dir: /home/node/app
+    working_dir: /usr/app
     volumes:
-      - ./:/home/node/app
+      - ./:/usr/app
     ports:
       - ${PORT}:8000
-    command: ls
+    command: npm start
