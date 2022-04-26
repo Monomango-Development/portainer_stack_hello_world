@@ -8,4 +8,4 @@ services:
       - ./:/home/node/app
     ports:
       - ${PORT}:8000
-    command: npm start
+    command: ls
