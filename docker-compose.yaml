@@ -1,9 +1,10 @@
 version: "2"
 services:
   backend:
+    image: "node:lts"
+    working_dir: /usr/app
     volumes:
       - .:/usr/app
-    build: .
     command: npm start
     ports:
       - ${PORT}:8000
